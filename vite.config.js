@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/wacorp-skin-viewer/',
   server: {
     fs: {
       strict: false,
@@ -10,5 +9,6 @@ export default defineConfig({
     cors: {
       origin: '*'
     }
-  }
+  },
+  base: './'
 });
