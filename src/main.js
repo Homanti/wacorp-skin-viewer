@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const skinUrl = urlParams.get('url');
 
 if (!skinUrl) {
-    document.querySelector('h1').textContent = '❌ URL скина не указан';
+    document.querySelector('h1').textContent = 'URL скина не указан';
 } else {
     const skinViewer = new skinview3d.SkinViewer({
         canvas: document.getElementById("skin_container"),
